@@ -4,47 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Dashboard</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
       <link rel="stylesheet" href="styles.css">
  <style>
  </style>
 </head>
 <style >
-    body{height: auto; width: auto;}
-    .list-group{max-height: 800px; }
+    body {
+            padding-top: 56px;
+        }
+      
 
-          @media (min-width: 992px) {
-            .list-group {
-                max-height: 800px; /* Adjust for large screens */
-            }
+        .fixed-search {
+            position: fixed;
+            top: 56px; 
+            left: 0;
+            right: 0;
+            z-index: 1030; 
         }
 
-        /* For medium screens */
-        @media (min-width: 768px) and (max-width: 991px) {
-            .list-group {
-                max-height: 500px; /* Adjust for medium screens */
-            }
-        }
-
-        /* For small screens */
-        @media (max-width: 767px) {
-            .list-group {
-                max-height: 300px; /* Adjust for small screens */
-            }
-        }
-</style>
+  .list-group{
+    max-height: 780px;
+  }
+    </style>
+</head>
 <body>
-
-
- <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
         <div class="container-fluid">
             <!-- Left Side: Dashboard -->
             <a class="navbar-brand" href="#">Dashboard</a>
             <div class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav me-3">
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Samples</a>
+                        <a class="nav-link" href="#">Samples</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Documents</a>
@@ -56,9 +48,9 @@
             </div>
         </div>
     </nav>
-
-    <!-- Search Box and Button Row -->
-    <div class="container-fluid mt-2">
+    <br>
+    <!-- Fixed Search Box and Button Row -->
+    <div class="container-fluid fixed-search mt-2">
         <div class="row">
             <!-- Search Box -->
             <div class="col-md-6">
@@ -68,10 +60,9 @@
                 <button class="btn btn-warning">+ New Sample</button>
             </div>
         </div>
-   </div>
+    </div>
 
-    <!-- Content -->
-    <div class="container-fluid mt-4">
+    <div class="container-fluid pt-4 mt-2">
         <div class="row flex-nowrap">
             
             <!-- List 1 -->
@@ -103,15 +94,6 @@
                         <li class="list-group-item">#08121-1 Sarah Jones 36F<br>Lot 1 | Blood</li>
                         <li class="list-group-item">#08121-2 Sarah Jones 36F<br>Lot 2 | Blood</li>
                         <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 3 | Blood</li>
-                           <li class="list-group-item">#08121-1 Sarah Jones 36F<br>Lot 1 | Blood</li>
-                        <li class="list-group-item">#08121-2 Sarah Jones 36F<br>Lot 2 | Blood</li>
-                        <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 3 | Blood</li>
-                           <li class="list-group-item">#08121-1 Sarah Jones 36F<br>Lot 1 | Blood</li>
-                        <li class="list-group-item">#08121-2 Sarah Jones 36F<br>Lot 2 | Blood</li>
-                        <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 3 | Blood</li>
-                           <li class="list-group-item">#08121-1 Sarah Jones 36F<br>Lot 1 | Blood</li>
-                        
-                    
                     </ul>
                 </div>
             </div>
@@ -129,23 +111,17 @@
                         <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 5 | Blood</li>
                           <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 4 | Blood</li>
                         <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 5 | Blood</li>
-                        <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 4 | Blood</li>
+                          <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 4 | Blood</li>
                         <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 5 | Blood</li>
                           <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 4 | Blood</li>
                         <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 5 | Blood</li>
-                        <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 4 | Blood</li>
+                          <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 4 | Blood</li>
                         <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 5 | Blood</li>
                           <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 4 | Blood</li>
                         <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 5 | Blood</li>
-                        <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 4 | Blood</li>
                         <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 5 | Blood</li>
                           <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 4 | Blood</li>
                         <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 5 | Blood</li>
-                        <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 4 | Blood</li>
-                        <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 5 | Blood</li>
-                          <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 4 | Blood</li>
-                        <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 5 | Blood</li>
-                        <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 4 | Blood</li>
                         <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 5 | Blood</li>
                           <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 4 | Blood</li>
                         <li class="list-group-item">#08121-3 Sarah Jones 36F<br>Lot 5 | Blood</li>
